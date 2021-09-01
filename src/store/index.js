@@ -57,12 +57,8 @@ export default createStore({
       commit('toggleAuth');
     },
     async logout({ commit }) {
-      const user = auth.currentUser;
-
-      if (user) {
-        await signOut(auth);
-        commit('toggleAuth');
-      }
+      await signOut(auth);
+      commit('toggleAuth');
     },
     async succesLog({ commit }) {
       setTimeout(() => {
