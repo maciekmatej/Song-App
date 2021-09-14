@@ -1,7 +1,4 @@
 # music
-```
-too view a page visit: https://maciekmatej.github.io/Song-App/
-```
 
 ## Project setup
 ```
@@ -35,4 +32,3 @@ yarn lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
-

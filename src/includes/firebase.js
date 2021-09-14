@@ -3,6 +3,7 @@ import {
   getFirestore, collection, setDoc, doc,
 } from 'firebase/firestore';
 import { getAuth } from 'firebase/auth';
+import { getStorage } from 'firebase/storage';
 
 const firebaseConfig = {
   apiKey: 'AIzaSyBVI_TLocU4YKkvhEgXtG0mD77_mFs5Z1M',
@@ -18,13 +19,18 @@ const firebaseApp = initializeApp(firebaseConfig);
 
 const db = getFirestore(firebaseApp);
 const auth = getAuth(firebaseApp);
+const storage = getStorage(firebaseApp); // music-c7eb1.appspot.com
 
 const usersCollection = collection(db, 'users');
-
+const songsCollection = collection(db, 'songs');
+const commentsCollection = collection(db, 'comments');
 export {
   db,
   auth,
   usersCollection,
   setDoc,
   doc,
+  storage,
+  songsCollection,
+  commentsCollection,
 };

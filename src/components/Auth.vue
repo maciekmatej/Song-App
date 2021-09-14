@@ -111,13 +111,13 @@ export default {
     };
   },
   computed: {
-    ...mapState(['authModalShow', 'authTabShow']),
+    ...mapState(['authModalShow']),
     // authModalShow() {
     //   return this.$store.getters.authModalShow;
     // },
   },
   methods: {
-    ...mapMutations(['toggleAuthModal', 'toggleAuthTabSwitch']),
+    ...mapMutations(['toggleAuthModal']),
 
   },
 };

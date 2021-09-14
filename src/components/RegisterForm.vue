@@ -1,6 +1,6 @@
 <template>
   <div
-    class="text-white text-center font-bold p-5 mb-4"
+    class="text-white text-center font-bold p-5 mb-4 rounded"
     v-if="reg_show_alert"
     :class="reg_alert_variant"
   >

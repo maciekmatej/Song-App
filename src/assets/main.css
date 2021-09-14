@@ -65,7 +65,17 @@ input[type="file"]{
   );
   animation: progress-bar-stripes 1s linear infinite;
 }
-
+/* #bg-video {   video background setting
+  min-width: 100vw;
+  min-height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+} */
 .music-bg {
   animation: slide 50s linear infinite;
   will-change: background-position;
@@ -88,4 +98,9 @@ input[type="file"]{
   100% {
     background-position: -4000px 0;
   }
+}
+.truncated {
+  white-space: nowrap; /* forces text to single line */
+  overflow: hidden;
+  text-overflow: ellipsis;
 }

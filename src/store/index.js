@@ -9,15 +9,11 @@ import {
 export default createStore({
   state: {
     authModalShow: false,
-    authTabShow: false,
     userLoggedIn: false,
   },
   mutations: {
     toggleAuthModal: (state) => {
       state.authModalShow = !state.authModalShow;
-    },
-    toggleAuthTabSwitch: (state) => {
-      state.authTabShow = !state.authTabShow;
     },
     toggleAuth: (state) => {
       state.userLoggedIn = !state.userLoggedIn;
@@ -56,7 +52,7 @@ export default createStore({
       await signInWithEmailAndPassword(auth, payload.email, payload.password);
       commit('toggleAuth');
     },
-    async logout({ commit }) {
+    async signOut({ commit }) {
       await signOut(auth);
       commit('toggleAuth');
     },
