@@ -1,6 +1,7 @@
 # music
-
-visit deployed version here: https://maciekmatej.github.io/Song-App/
+```
+visit the website on: https://maciekmatej.github.io/Song-App/
+```
 
 ## Project setup
 ```

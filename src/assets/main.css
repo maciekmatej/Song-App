@@ -36,6 +36,10 @@ a:hover {
   will-change: background-position;
   z-index: -1;
 }
+/* #header {
+  position: fixed;
+  top: 0;
+} */
 
 #playlist li:first-child {
   padding-top: 25px;

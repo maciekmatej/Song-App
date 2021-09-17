@@ -98,6 +98,7 @@ export default {
             genre: '',
             comment_count: 0,
           };
+          console.log(auth.currentUser);
           song.url = await getDownloadURL(task.snapshot.ref);
           const songRef = await addDoc(songsCollection, song);
           const songSnapshot = await getDoc(songRef);

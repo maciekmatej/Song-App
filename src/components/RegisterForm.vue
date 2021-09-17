@@ -142,9 +142,9 @@ export default {
     return {
       schema: {
         name: 'required|min:3|max:100|alpha_spaces',
-        email: 'required|email|min:3|max:100',
+        email: 'required|email|min:6|max:100',
         age: 'required|min_value:18|max_value:105',
-        password: 'required|min:3|max:20',
+        password: 'required|min:6|max:25',
         confirm_password: 'passwords_mismatch:@password',
         country: 'required|country_excluded:Argentina',
         tos: 'tos',
